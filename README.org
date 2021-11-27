@@ -16,7 +16,7 @@ You will also need to install FitParse:
   pip install fitparse
 #+end_src
 
-If you extract you .FIT file to a folder and rename as ~activity.fit~ and place the following script as  ~script.py~ in that same folder. Open a terminal and run with the following command
+If you extract you .FIT file to a folder and rename as ~activity.fit~ and place the ~parser.py~ script in that same folder. Open a terminal and run with the following command
 
 #+begin_src bash
 python script.py
