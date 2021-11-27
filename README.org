@@ -166,5 +166,6 @@ plt.savefig('plot.png', dpi=1200)
 
 ** Close out
 
-   So there you have it, your data to how you want! Enjoy, go forth and plot! 
+   So there you have it, your data to do with what you want! Enjoy, go forth and plot! 
 
+ 
