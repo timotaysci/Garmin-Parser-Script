@@ -27,49 +27,7 @@ You will now have a .csv file called ~output.csv~ which contains all your data a
 You can then plot however you like. 
 
 ** Example Plot
-#+begin_src python :results output
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-    
-df = pd.read_csv('./output.csv')
-    
-    
-fig, ax1 = plt.subplots()
-    
-ax1.set_xlabel('Time (min)')
-
-ax1.set_ylabel('Heart Rate (bpm)', color='tab:red')
-
-ax1.plot(df['Elapsed Time (s)']/60,df['heart_rate (bpm)'], color = 'tab:red')
-
-ax1.tick_params(axis='y', labelcolor='tab:red')
-    
-
-
-ax2 = ax1.twinx()
-    
-
-ax2.plot(df['Elapsed Time (s)']/60,df['enhanced_speed (m/s)'],color='tab:blue')
-
-
-
-ax2.set_ylabel('Speed (m/s)', color='tab:blue')
-
-ax2.tick_params(axis='y', labelcolor='tab:blue')
-  
-
-#plt.show()
-
-plt.savefig('plot.png', dpi=1200)
-    
-    
-    
-    
-    
-    
-#+end_src
-
+Running ~plotting.py~ gives you the below plot.
 
 [[file:plot.png]]
 
